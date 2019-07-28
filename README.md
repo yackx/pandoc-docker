@@ -37,4 +37,4 @@ Generate a [sample.html](sample/sample.html):
 
 ## License
 
-GNU General Public License v3.0. Read [LICENSE.txt]
+GNU General Public License v3.0. Read [LICENSE.txt](LICENSE.txt)
