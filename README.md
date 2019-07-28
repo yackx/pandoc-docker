@@ -16,11 +16,11 @@ The installation is heavyweight and can be cumbersome on non GNU/Linux systems. 
 
 From the [sample.md](sample/sample.md) source:
 
-1. Generate a [sample.pdf](sample/sample.pdf):
+Generate a [sample.pdf](sample/sample.pdf):
 
     docker run -v `pwd`/sample:/data yackx:pandoc pandoc -t beamer sample.md -o sample.pdf
 
-2. Generate a [sample.html](sample/sample.html):
+Generate a [sample.html](sample/sample.html):
 
     docker run -v `pwd`/sample:/data yackx:pandoc pandoc -f markdown -t html5 sample.md -o sample.html
 
