@@ -39,6 +39,16 @@ $$ \forall x \in X, \quad \exists y \leq \epsilon $$
 
 - Stranger things
 
+# Code
+
+Some code:
+
+```{java}
+public static void main(String [] args) {
+    System.out.println("Hello, World!");
+}
+```
+
 # Slide with table
 
 Standard markdown syntax.
