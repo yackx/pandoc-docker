@@ -10,7 +10,7 @@ The installation is heavyweight and can be cumbersome on non GNU/Linux systems. 
 
     docker build -f Dockerfile -t yackx:pandoc .
 
-*Remark*: this will generate a rather large image (above 3Gb).
+*Remark*: this will generate an image of moderate size (aroubd 1Gb).
 
 ## Run
 
