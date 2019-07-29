@@ -14,15 +14,21 @@ The installation is heavyweight and can be cumbersome on non GNU/Linux systems. 
 
 ## Run
 
-From the [sample.md](sample/sample.md) source:
+A `Makefile` will read the [sample.md](sample/sample.md) source and convert it to different output formats.
 
 Generate a [sample.pdf](sample/sample.pdf):
 
-    docker run -v `pwd`/sample:/data yackx:pandoc pandoc -t beamer sample.md -o sample.pdf
+    make pdf
 
 Generate a [sample.html](sample/sample.html):
 
-    docker run -v `pwd`/sample:/data yackx:pandoc pandoc -f markdown -t html5 sample.md -o sample.html
+    make html
+
+Cleanup:
+
+    make clean
+
+If don't have have `make` installed or working, you can simply copy-paste the commands from [Makefile](Makefile).
 
 ## See also
 
