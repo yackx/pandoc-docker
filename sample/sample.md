@@ -28,6 +28,17 @@ $$ \forall x \in X, \quad \exists y \leq \epsilon $$
 
 ![This is a free image of a ladybug](ladybird-1367182.jpg)
 
+# Multiple levels
+
+## Level 1
+
+- Some things
+- Take place here
+
+## Level 2
+
+- Stranger things
+
 # Slide with table
 
 Standard markdown syntax.
