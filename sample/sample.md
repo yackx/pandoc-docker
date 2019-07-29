@@ -122,3 +122,23 @@ Alignments can be specified as with pipe tables, by putting colons at the bounda
 +---------------+---------------+--------------------+
 
 The row of `=`s separates the header from the table body, and can be omitted for a headerless table. The cells of grid tables may contain arbitrary block elements (multiple paragraphs, code blocks, lists, etc.). Cells that span multiple columns or rows are not supported. 
+
+# Columns
+:::::::::::::: {.columns}
+::: {.column width="40%"}
+Apple
+
+Orange
+
+Banana
+
+Cherry
+:::
+::: {.column width="60%"}
+Brussels sprout
+
+Eggplant
+
+Cucumber
+:::
+::::::::::::::
