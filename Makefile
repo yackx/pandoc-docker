@@ -1,6 +1,6 @@
 pdf:
 	@echo 'Generating PDF'
-	@docker run -v `pwd`/sample:/data yackx:pandoc pandoc -t beamer sample.md -o sample.pdf
+	@docker run -v `pwd`/sample:/data yackx:pandoc pandoc -t beamer --pdf-engine=xelatex sample.md -o sample.pdf
 
 html:
 	@echo 'Generating HTML'

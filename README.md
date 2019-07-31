@@ -30,6 +30,12 @@ Cleanup:
 
 If don't have have `make` installed or working, you can simply copy-paste the commands from [Makefile](Makefile).
 
+## XeTeX
+
+[XeTeX](https://en.wikipedia.org/wiki/XeTeX) is a TeX typesetting engine using Unicode and supporting modern font technologies. It is included in the docker image and the `Makefile` PDF generation command contains a switch `--pdf-engine=xelatex` to invoke it.
+
+With simpler presentations, you might want to remove that extra-dependency from the docker image and remove to switch in order to gain about 2Gb of image size.
+
 ## See also
 
 * [Creating Presentations Using Markdown and Pandoc](https://www.youtube.com/watch?v=e-HqKSBZOXo)
