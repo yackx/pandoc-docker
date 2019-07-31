@@ -8,7 +8,7 @@ The installation is heavyweight and can be cumbersome on non GNU/Linux systems. 
 
 ## Install
 
-    docker build -f Dockerfile -t yackx:pandoc .
+    docker build -t yackx:pandoc .
 
 *Remark*: this will generate an image of moderate size (aroubd 1Gb).
 
