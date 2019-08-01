@@ -14,6 +14,14 @@ RUN apt-get update -q && \
     wget -nv https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-1-amd64.deb && \
     dpkg -i pandoc-2.7.3-1-amd64.deb
 
+# FiraSans is used in the popular "metropolis" beamer theme 
+RUN wget -nv https://github.com/bBoxType/FiraSans/archive/master.zip && \
+    unzip master.zip && \
+    mkdir -p /usr/share/fonts/opentype/fira && \
+    mkdir -p /usr/share/fonts/truetype/fira
+RUN find FiraSans-master/ -name "*.otf" -exec cp {} /usr/share/fonts/opentype/fira/ \;
+RUN find FiraSans-master/ -name "*.ttf" -exec cp {} /usr/share/fonts/truetype/fira/ \;
+
 RUN apt-get update -q && \
     apt-get install -qy \
         texlive-latex-recommended \
