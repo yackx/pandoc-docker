@@ -2,44 +2,44 @@
 % Youri Ackx
 % August 2019
 
-# A first slide
+## A first slide
 
 This is a slide. Only text.
 
-# List
+## List
 
 - Item 1
 - Item 2
 - Item 3
 
-# Equation
+## Equation
 
 You can use the usual LateX format.
 
 $$ \forall x \in X, \quad \exists y \leq \epsilon $$
 
-# Text formatting
+## Text formatting
 
 - *This is italic*
 - **This is bold**
 - ~~strikethrough~~
 
-# Image
+## Image
 
 ![This is a free image of a ladybug](ladybird-1367182.jpg){width=50%}
 
-# Multiple levels
+## Multiple levels
 
-## Level 1
+### Level 1
 
 - Some things
 - Take place here
 
-## Level 2
+### Level 2
 
 - Stranger things
 
-# Code
+## Code
 
 Some code:
 
@@ -49,7 +49,9 @@ public static void main(String [] args) {
 }
 ```
 
-# Table
+# Tables
+
+## Table
 
 Standard markdown syntax.
 
@@ -58,7 +60,7 @@ A        | B    | C
 1        | YES  | NO
 2        | YES  | YES
 
-# Table
+## Table
 
 --------------------------------------------------------------------
 Column 1                                                Column 2
@@ -67,11 +69,11 @@ I want the contents of this cell                        Word1 Word2
 to fit into one line
 ------------------------------------------------------  ------------
 
-# Table
+## Table
 
 https://pandoc.org/MANUAL.html#tables
 
-# Table
+## Table
 
 -------------------------------------------------------------
  Centered   Default           Right Left
@@ -88,7 +90,7 @@ https://pandoc.org/MANUAL.html#tables
 Table: Here's the caption. It, too, may span
 multiple lines.
 
-# Table
+## Table
 
 These work like simple tables, but with the following differences:
 
@@ -96,7 +98,7 @@ These work like simple tables, but with the following differences:
 - They must end with a row of dashes, then a blank line.
 - The rows must be separated by blank lines.
 
-# Table with alignment
+## Table with alignment
 
   Right     Left     Center     Default
 -------     ------ ----------   -------
@@ -106,7 +108,7 @@ These work like simple tables, but with the following differences:
 
 Table: Demonstration of simple table syntax.
 
-# Table with pipe alignment
+## Table with pipe alignment
 
 Alignments can be specified as with pipe tables, by putting colons at the boundaries of the separator line after the header.
 
@@ -118,7 +120,7 @@ Alignments can be specified as with pipe tables, by putting colons at the bounda
 
 
 
-# Table without header
+## Table without header
 
 -------     ------ ----------   -------
      12     12        12             12
@@ -127,7 +129,7 @@ Alignments can be specified as with pipe tables, by putting colons at the bounda
 -------     ------ ----------   -------
 
 
-# Grid table
+## Grid table
 
 : Sample grid table.
 
@@ -141,13 +143,13 @@ Alignments can be specified as with pipe tables, by putting colons at the bounda
 |               |               | - tasty            |
 +---------------+---------------+--------------------+
 
-# Grid table
+## Grid table
 
-## How to
+### How to
 
 The row of `=`s separates the header from the table body, and can be omitted for a headerless table. The cells of grid tables may contain arbitrary block elements (multiple paragraphs, code blocks, lists, etc.). Cells that span multiple columns or rows are not supported. 
 
-# Columns
+## Columns
 :::::::::::::: {.columns}
 ::: {.column width="40%"}
 Apple
