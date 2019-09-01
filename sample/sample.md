@@ -4,29 +4,29 @@
 
 # A first slide
 
-This is a slide.
+This is a slide. Only text.
 
-# Slide with list
+# List
 
 - Item 1
 - Item 2
 - Item 3
 
-# Slide with equation
+# Equation
 
 You can use the usual LateX format.
 
 $$ \forall x \in X, \quad \exists y \leq \epsilon $$
 
-# Slide with text formatting
+# Text formatting
 
 - *This is italic*
 - **This is bold**
 - ~~strikethrough~~
 
-# Slide with image
+# Image
 
-![This is a free image of a ladybug](ladybird-1367182.jpg)
+![This is a free image of a ladybug](ladybird-1367182.jpg){width=50%}
 
 # Multiple levels
 
@@ -49,7 +49,7 @@ public static void main(String [] args) {
 }
 ```
 
-# Slide with table
+# Table
 
 Standard markdown syntax.
 
@@ -58,23 +58,20 @@ A        | B    | C
 1        | YES  | NO
 2        | YES  | YES
 
-# Slide with table
+# Table
 
 --------------------------------------------------------------------
 Column 1                                                Column 2
 ------------------------------------------------------  ------------
-I want the contents of this cell to fit into one line   Word1 Word2
-
+I want the contents of this cell                        Word1 Word2
+to fit into one line
 ------------------------------------------------------  ------------
 
-: **Column 2 is narrow.** For column 1: 54 dashes in Markdown source 
-for separator line; for column 2: 12 dashes in separator line (22% of column 1).
-
-# Tables
+# Table
 
 https://pandoc.org/MANUAL.html#tables
 
-# Slide with table
+# Table
 
 -------------------------------------------------------------
  Centered   Default           Right Left
@@ -90,6 +87,8 @@ https://pandoc.org/MANUAL.html#tables
 
 Table: Here's the caption. It, too, may span
 multiple lines.
+
+# Table
 
 These work like simple tables, but with the following differences:
 
@@ -141,6 +140,10 @@ Alignments can be specified as with pipe tables, by putting colons at the bounda
 | Oranges       | $2.10         | - cures scurvy     |
 |               |               | - tasty            |
 +---------------+---------------+--------------------+
+
+# Grid table
+
+## How to
 
 The row of `=`s separates the header from the table body, and can be omitted for a headerless table. The cells of grid tables may contain arbitrary block elements (multiple paragraphs, code blocks, lists, etc.). Cells that span multiple columns or rows are not supported. 
 
