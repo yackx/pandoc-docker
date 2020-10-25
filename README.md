@@ -20,11 +20,11 @@ A `Makefile` will read the [sample.md](sample/sample.md) source and convert it t
 
 Generate a [sample.pdf](sample/sample.pdf)
 
-    make pdf
+    make slide-pdf
 
-Generate a [sample.html](sample/sample.html)
+Generate a [slide.html](sample/slide.html) (several themes available)
 
-    make html
+    make slide-html
 
 Cleanup
 
