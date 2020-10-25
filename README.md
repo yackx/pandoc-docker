@@ -4,13 +4,15 @@
 
 Conveniently write presentations slides with markdown and convert them to HTML or PDF with pandoc and beamer.
 
-The installation is heavyweight and can be cumbersome on non GNU/Linux systems. This Docker image should make things simpler.
+The pandoc toolchain installation is heavyweight and can be cumbersome on non GNU/Linux systems. This Docker image should make things simpler.
+
+This image is also suited for book editing, although it contains extra dependencies for slide presentations.
 
 ## Install
 
     docker build -t yackx/pandoc .
 
-*Remark*: this will generate an image of moderate size (aroubd 1Gb).
+*Remark*: this will take some and generate an large image (aroubd 3Gb).
 
 ## Run
 
@@ -34,7 +36,7 @@ If don't have have `make` installed or working, you can simply copy-paste the co
 
 [XeTeX](https://en.wikipedia.org/wiki/XeTeX) is a TeX typesetting engine using Unicode and supporting modern font technologies. It is included in the docker image and the `Makefile` PDF generation command contains a switch `--pdf-engine=xelatex` to invoke it.
 
-With simpler presentations, you might want to remove that extra-dependency from the docker image and remove to switch in order to gain about 2Gb of image size.
+For simpler slide presentations, you might want to remove that extra-dependency from the docker image and remove to switch in order to gain about 2Gb of image size.
 
 ## See also
 
