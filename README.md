@@ -18,15 +18,15 @@ This image is also suited for book editing, although it contains extra dependenc
 
 A `Makefile` will read the [sample.md](sample/sample.md) source and convert it to different output formats.
 
-Generate a [sample.pdf](sample/sample.pdf):
+Generate a [sample.pdf](sample/sample.pdf)
 
     make pdf
 
-Generate a [sample.html](sample/sample.html):
+Generate a [sample.html](sample/sample.html)
 
     make html
 
-Cleanup:
+Cleanup
 
     make clean
 
