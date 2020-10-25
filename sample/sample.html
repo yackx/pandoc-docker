@@ -1,40 +1,41 @@
-<h1 id="a-first-slide">A first slide</h1>
-<p>This is a slide.</p>
-<h1 id="slide-with-list">Slide with list</h1>
+<h2 id="a-first-slide">A first slide</h2>
+<p>This is a slide. Only text.</p>
+<h2 id="list">List</h2>
 <ul>
 <li>Item 1</li>
 <li>Item 2</li>
 <li>Item 3</li>
 </ul>
-<h1 id="slide-with-equation">Slide with equation</h1>
+<h2 id="equation">Equation</h2>
 <p>You can use the usual LateX format.</p>
-<p><br /><span class="math display">∀<em>x</em> ∈ <em>X</em>, ∃<em>y</em> ≤ <em>ϵ</em></span><br /></p>
-<h1 id="slide-with-text-formatting">Slide with text formatting</h1>
+<p><span class="math display">∀<em>x</em> ∈ <em>X</em>,  ∃<em>y</em> ≤ <em>ϵ</em></span></p>
+<h2 id="text-formatting">Text formatting</h2>
 <ul>
 <li><em>This is italic</em></li>
 <li><strong>This is bold</strong></li>
 <li><del>strikethrough</del></li>
 </ul>
-<h1 id="slide-with-image">Slide with image</h1>
+<h2 id="image">Image</h2>
 <figure>
-<img src="ladybird-1367182.jpg" alt="" /><figcaption>This is a free image of a ladybug</figcaption>
+<img src="ladybird-1367182.jpg" style="width:50.0%" alt="This is a free image of a ladybug" /><figcaption aria-hidden="true">This is a free image of a ladybug</figcaption>
 </figure>
-<h1 id="multiple-levels">Multiple levels</h1>
-<h2 id="level-1">Level 1</h2>
+<h2 id="multiple-levels">Multiple levels</h2>
+<h3 id="level-1">Level 1</h3>
 <ul>
 <li>Some things</li>
 <li>Take place here</li>
 </ul>
-<h2 id="level-2">Level 2</h2>
+<h3 id="level-2">Level 2</h3>
 <ul>
 <li>Stranger things</li>
 </ul>
-<h1 id="code">Code</h1>
+<h2 id="code">Code</h2>
 <p>Some code:</p>
 <pre class="{java}"><code>public static void main(String [] args) {
     System.out.println(&quot;Hello, World!&quot;);
 }</code></pre>
-<h1 id="slide-with-table">Slide with table</h1>
+<h1 id="tables">Tables</h1>
+<h2 id="table">Table</h2>
 <p>Standard markdown syntax.</p>
 <table>
 <thead>
@@ -57,9 +58,8 @@
 </tr>
 </tbody>
 </table>
-<h1 id="slide-with-table-1">Slide with table</h1>
+<h2 id="table-1">Table</h2>
 <table style="width:96%;">
-<caption><strong>Column 2 is narrow.</strong> For column 1: 54 dashes in Markdown source for separator line; for column 2: 12 dashes in separator line (22% of column 1).</caption>
 <colgroup>
 <col style="width: 77%" />
 <col style="width: 18%" />
@@ -77,9 +77,9 @@
 </tr>
 </tbody>
 </table>
-<h1 id="tables">Tables</h1>
+<h2 id="table-2">Table</h2>
 <p>https://pandoc.org/MANUAL.html#tables</p>
-<h1 id="slide-with-table-2">Slide with table</h1>
+<h2 id="table-3">Table</h2>
 <table style="width:86%;">
 <caption>Here’s the caption. It, too, may span multiple lines.</caption>
 <colgroup>
@@ -111,13 +111,14 @@
 </tr>
 </tbody>
 </table>
+<h2 id="table-4">Table</h2>
 <p>These work like simple tables, but with the following differences:</p>
 <ul>
 <li>They must begin with a row of dashes, before the header text (unless the headers are omitted).</li>
 <li>They must end with a row of dashes, then a blank line.</li>
 <li>The rows must be separated by blank lines.</li>
 </ul>
-<h1 id="table-with-alignment">Table with alignment</h1>
+<h2 id="table-with-alignment">Table with alignment</h2>
 <table>
 <caption>Demonstration of simple table syntax.</caption>
 <thead>
@@ -149,7 +150,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="table-with-pipe-alignment">Table with pipe alignment</h1>
+<h2 id="table-with-pipe-alignment">Table with pipe alignment</h2>
 <p>Alignments can be specified as with pipe tables, by putting colons at the boundaries of the separator line after the header.</p>
 <table style="width:74%;">
 <colgroup>
@@ -172,7 +173,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="table-without-header">Table without header</h1>
+<h2 id="table-without-header">Table without header</h2>
 <table>
 <tbody>
 <tr class="odd">
@@ -195,7 +196,7 @@
 </tr>
 </tbody>
 </table>
-<h1 id="grid-table">Grid table</h1>
+<h2 id="grid-table">Grid table</h2>
 <table style="width:74%;">
 <caption>Sample grid table.</caption>
 <colgroup>
@@ -229,8 +230,10 @@
 </tr>
 </tbody>
 </table>
+<h2 id="grid-table-1">Grid table</h2>
+<h3 id="how-to">How to</h3>
 <p>The row of <code>=</code>s separates the header from the table body, and can be omitted for a headerless table. The cells of grid tables may contain arbitrary block elements (multiple paragraphs, code blocks, lists, etc.). Cells that span multiple columns or rows are not supported.</p>
-<h1 id="columns">Columns</h1>
+<h2 id="columns">Columns</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
 <p>Apple</p>

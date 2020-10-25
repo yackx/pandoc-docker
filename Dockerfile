@@ -1,6 +1,6 @@
 # Recent image advised to avoid older textlive version
 # as we use the latest pandoc .deb
-FROM ubuntu:disco-20190718
+FROM ubuntu:focal-20201008
 
 LABEL maintainer="Youri Ackx https://github.com/yackx/pandoc-docker"
 
@@ -8,11 +8,10 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # Using a recent version of pandoc
 # as Ubuntu packages are quiet outdated
-# RUN apt install -qy wget
 RUN apt-get update -q && \
     apt-get install -qy wget unzip && \
-    wget -nv https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-1-amd64.deb && \
-    dpkg -i pandoc-2.7.3-1-amd64.deb
+    wget -nv https://github.com/jgm/pandoc/releases/download/2.11.0.2/pandoc-2.11.0.2-1-amd64.deb && \
+    dpkg -i pandoc-2.11.0.2-1-amd64.deb
 
 # FiraSans is used in the popular "metropolis" beamer theme 
 RUN wget -nv https://github.com/bBoxType/FiraSans/archive/master.zip && \
@@ -22,8 +21,7 @@ RUN wget -nv https://github.com/bBoxType/FiraSans/archive/master.zip && \
 RUN find FiraSans-master/ -name "*.otf" -exec cp {} /usr/share/fonts/opentype/fira/ \;
 RUN find FiraSans-master/ -name "*.ttf" -exec cp {} /usr/share/fonts/truetype/fira/ \;
 
-RUN apt-get update -q && \
-    apt-get install -qy \
+RUN apt-get install -qy \
         texlive-latex-recommended \
         texlive-latex-extra \
         fonts-freefont-ttf \
@@ -34,8 +32,8 @@ RUN apt-get update -q && \
         # and add extra fonts.
         # Note: some of these dependencies increase the image size considerably
         texlive-xetex  \
+        texlive-fonts-recommended \
         texlive-fonts-extra \
-        texlive-generic-extra \
         latexmk \
         fonts-liberation \
         fonts-firacode && \
