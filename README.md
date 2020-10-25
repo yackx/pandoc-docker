@@ -26,6 +26,10 @@ Generate a [slide.html](sample/slide.html) (several themes available)
 
     make slide-html
 
+Generate a [manual.pdf](sample/manual.pdf)
+
+    make book-pdf
+
 Cleanup
 
     make clean
