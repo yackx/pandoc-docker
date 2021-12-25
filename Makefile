@@ -1,6 +1,8 @@
 # See demos and more options
 # https://pandoc.org/demos.html
 
+all: slide-pdf book-pdf basic-html slide-html
+
 slide-pdf:
 	@echo 'Generating PDF from slides'
 	@docker run -v `pwd`/sample:/data yackx/pandoc pandoc -V theme:metropolis -t beamer --pdf-engine=xelatex --slide-level=2 sample.md -o sample.pdf
