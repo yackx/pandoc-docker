@@ -4,9 +4,9 @@
 
 Conveniently write presentations slides with markdown and convert them to HTML or PDF with pandoc and beamer.
 
-The pandoc toolchain installation is heavyweight and can be cumbersome on non GNU/Linux systems. This Docker image should make things simpler.
+The pandoc toolchain including **beamer** is heavyweight and can be cumbersome to install on non GNU/Linux systems. This Docker image should make things simpler.
 
-This image is also suited for book editing, although it contains extra dependencies for slide presentations.
+It is also suited for **book editing**, although it contains extra dependencies for slide presentations.
 
 ## Install
 
