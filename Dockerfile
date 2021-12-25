@@ -6,12 +6,15 @@ LABEL maintainer="Youri Ackx https://github.com/yackx/pandoc-docker"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
 # Using a recent version of pandoc
 # as Ubuntu packages are quiet outdated
 RUN apt-get update -q && \
     apt-get install -qy wget unzip && \
-    wget -nv https://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-1-arm64.deb && \
-    dpkg -i pandoc-2.16.2-1-arm64.deb
+    arch=$(arch | sed s/aarch64/arm64/ | sed s/x86_64/amd64/) && \
+    wget -nv https://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-1-${arch}.deb && \
+    dpkg -i pandoc-2.16.2-1-${arch}.deb
 
 # FiraSans is used in the popular "metropolis" beamer theme 
 RUN wget -nv https://github.com/bBoxType/FiraSans/archive/master.zip && \
