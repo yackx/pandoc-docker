@@ -12,7 +12,7 @@ This image is also suited for book editing, although it contains extra dependenc
 
     docker build -t yackx/pandoc .
 
-*Remark*: this will take some and generate an large image (aroubd 3Gb).
+*Remark*: this will take some and generate an large image (around 3Gb).
 
 ## Run
 
