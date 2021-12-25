@@ -1,6 +1,6 @@
 # Recent image advised to avoid older textlive version
 # as we use the latest pandoc .deb
-FROM ubuntu:focal-20201008
+FROM ubuntu:impish-20211102
 
 LABEL maintainer="Youri Ackx https://github.com/yackx/pandoc-docker"
 
@@ -10,8 +10,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 # as Ubuntu packages are quiet outdated
 RUN apt-get update -q && \
     apt-get install -qy wget unzip && \
-    wget -nv https://github.com/jgm/pandoc/releases/download/2.11.0.2/pandoc-2.11.0.2-1-amd64.deb && \
-    dpkg -i pandoc-2.11.0.2-1-amd64.deb
+    wget -nv https://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-1-arm64.deb && \
+    dpkg -i pandoc-2.16.2-1-arm64.deb
 
 # FiraSans is used in the popular "metropolis" beamer theme 
 RUN wget -nv https://github.com/bBoxType/FiraSans/archive/master.zip && \
