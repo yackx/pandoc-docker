@@ -1,5 +1,3 @@
-# Recent image advised to avoid older textlive version
-# as we use the latest pandoc .deb
 FROM ubuntu:impish-20211102
 
 LABEL maintainer="Youri Ackx https://github.com/yackx/pandoc-docker"
@@ -8,23 +6,11 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
-# Using a recent version of pandoc
-# as Ubuntu packages are quiet outdated
 RUN apt-get update -q && \
-    apt-get install -qy wget unzip && \
-    arch=$(arch | sed s/aarch64/arm64/ | sed s/x86_64/amd64/) && \
-    wget -nv https://github.com/jgm/pandoc/releases/download/2.16.2/pandoc-2.16.2-1-${arch}.deb && \
-    dpkg -i pandoc-2.16.2-1-${arch}.deb
-
-# FiraSans is used in the popular "metropolis" beamer theme 
-RUN wget -nv https://github.com/bBoxType/FiraSans/archive/master.zip && \
-    unzip master.zip && \
-    mkdir -p /usr/share/fonts/opentype/fira && \
-    mkdir -p /usr/share/fonts/truetype/fira
-RUN find FiraSans-master/ -name "*.otf" -exec cp {} /usr/share/fonts/opentype/fira/ \;
-RUN find FiraSans-master/ -name "*.ttf" -exec cp {} /usr/share/fonts/truetype/fira/ \;
-
-RUN apt-get install -qy \
+    apt-get install -qy \
+        wget \
+        unzip \
+        pandoc \
         texlive-latex-recommended \
         texlive-latex-extra \
         fonts-freefont-ttf \
@@ -41,6 +27,14 @@ RUN apt-get install -qy \
         fonts-liberation \
         fonts-firacode && \
     rm -rf /var/lib/apt/lists/*
+
+# FiraSans is used in the popular "metropolis" beamer theme 
+RUN wget -nv https://github.com/bBoxType/FiraSans/archive/master.zip && \
+    unzip master.zip && \
+    mkdir -p /usr/share/fonts/opentype/fira && \
+    mkdir -p /usr/share/fonts/truetype/fira
+RUN find FiraSans-master/ -name "*.otf" -exec cp {} /usr/share/fonts/opentype/fira/ \;
+RUN find FiraSans-master/ -name "*.ttf" -exec cp {} /usr/share/fonts/truetype/fira/ \;
 
 WORKDIR /data
 
