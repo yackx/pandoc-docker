@@ -1,8 +1,8 @@
 # pandoc-docker
 
-**A simple docker image file for pandoc beamer pdf**
+**A docker image file for pandoc with beamer support**
 
-Conveniently write presentations slides with markdown and convert them to HTML or PDF with pandoc and beamer.
+Write presentation slides in markdown and convert them to HTML or PDF with pandoc and beamer.
 
 The pandoc toolchain including **beamer** is heavyweight and can be cumbersome to install on non GNU/Linux systems. This Docker image should make things simpler.
 
