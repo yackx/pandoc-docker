@@ -1,4 +1,4 @@
-FROM ubuntu:impish-20211102
+FROM ubuntu:jammy-20230301
 
 LABEL maintainer="Youri Ackx https://github.com/yackx/pandoc-docker"
 
