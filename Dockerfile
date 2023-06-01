@@ -10,20 +10,19 @@ RUN apt-get update -q && \
     apt-get install -qy \
         wget \
         unzip \
+        python3-pip \
         pandoc \
-        texlive-latex-recommended \
-        texlive-latex-extra \
-        fonts-freefont-ttf \
         build-essential \
         make \
         git \
-        # Extend fonctionnalities with xetex and latexmk
-        # and add extra fonts.
-        # Note: some of these dependencies increase the image size considerably
+        texlive-latex-recommended \
+        texlive-latex-extra \
         texlive-xetex  \
         texlive-fonts-recommended \
         texlive-fonts-extra \
+        texlive-lang-french \
         latexmk \
+        fonts-freefont-ttf \
         fonts-liberation \
         fonts-firacode && \
     rm -rf /var/lib/apt/lists/*
