@@ -36,6 +36,14 @@ Cleanup
 
 If don't have have `make` installed or working, you can simply copy-paste the commands from [Makefile](Makefile).
 
+## Install
+
+Create a file `/usr/local/bin/pandoc`
+
+```bash
+docker run -v `pwd`:/data yackx/pandoc pandoc $@
+```
+
 ## XeTeX
 
 [XeTeX](https://en.wikipedia.org/wiki/XeTeX) is a TeX typesetting engine using Unicode and supporting modern font technologies. It is included in the docker image and the `Makefile` PDF generation command contains a switch `--pdf-engine=xelatex` to invoke it.
