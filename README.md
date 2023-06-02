@@ -36,7 +36,7 @@ Cleanup
 
 If don't have have `make` installed or working, you can simply copy-paste the commands from [Makefile](Makefile).
 
-## Install
+## Shortcut
 
 Create a file `/usr/local/bin/pandoc`
 
