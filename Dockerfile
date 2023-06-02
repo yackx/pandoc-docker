@@ -34,6 +34,7 @@ RUN wget -nv https://github.com/bBoxType/FiraSans/archive/master.zip && \
     mkdir -p /usr/share/fonts/truetype/fira
 RUN find FiraSans-master/ -name "*.otf" -exec cp {} /usr/share/fonts/opentype/fira/ \;
 RUN find FiraSans-master/ -name "*.ttf" -exec cp {} /usr/share/fonts/truetype/fira/ \;
+RUN updmap -sys
 
 WORKDIR /data
 
